@@ -36,6 +36,40 @@ $ npm install -g eslint jest
 added 653 packages from 414 contributors in 25.596s
 ```
 
+```bash
+$ which eslint
+/usr/local/bin/eslint
+$ which jest
+/usr/local/bin/jest
+```
+
+## Uninstalling a Package
+npm supports “uninstall” and “update” commands
+
+
+```bash
+$ npm uninstall prettier
+removed 1 package and audited 652 packages in 1.99s
+found 0 vulnerabilities
+```
+
+## Auditing Packages
+
+npm also has an interesting “audit” command that you can use to find and fix security vulnerabilities in your dependencies:
+
+```bash
+$ npm audit --fix
+=== npm audit security report ===
+found 0 vulnerabilities in 876354 scanned packages
+```
+
+## Run locally installed tools 
+
+Fortunately, npm is bundled with a command known as “npx,” which you can use to run locally installed tools with commands like `npx eslint` or `npx jest`.
+
+## open source packages
+The company behind npm also maintains the https://npmjs.com
+package repository, which holds hundreds of thousands of open source packages. But you don’t have to use the npm package manager to access this repository of packages. Alternatives include yarn and pnpm.
 
 Source: 
 
