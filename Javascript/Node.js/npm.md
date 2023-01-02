@@ -22,7 +22,7 @@ npm install --save-dev prettier
 ```
 
 ## Global dependencies
-Sometimes you might want to install developer tools globally so that they are accessible anywhere even for code that is not part of a formal project with a package.json file and a node_modules/ directory. For
+Sometimes you might want to **install developer tools globally so that they are accessible anywhere even for code** that is not part of a formal project with a package.json file and a node_modules/ directory. For
 that you can use the -g (for global) option:
 
 ```bash
@@ -63,15 +63,24 @@ $ npm audit --fix
 found 0 vulnerabilities in 876354 scanned packages
 ```
 
+## Listing Packages
+
+This command will print to stdout all the versions of packages that are installed, as well as their dependencies when --all is specified, in a tree structure.
+
+```bash
+npm ls
+```
+
 ## Run locally installed tools 
 
 Fortunately, npm is bundled with a command known as “npx,” which you can use to run locally installed tools with commands like `npx eslint` or `npx jest`.
 
 ## open source packages
 The company behind npm also maintains the https://npmjs.com
-package repository, which holds hundreds of thousands of open source packages. But you don’t have to use the npm package manager to access this repository of packages. Alternatives include yarn and pnpm.
+package repository, which holds hundreds of thousands of open source packages. But you don’t have to use the npm package manager to access this repository of packages. Alternatives include ` yarn` and `pnpm`.
 
 Source: 
 
-*Javascript: The Definitive Guide, 7th Edition, David Flanagan*
-- chapter 17.4
+- *Javascript: The Definitive Guide, 7th Edition, David Flanagan* chapter 17.4
+
+- [Docs npmjs Version 7 npm-ls](https://docs.npmjs.com/cli/v7/commands/npm-ls?v=true)
